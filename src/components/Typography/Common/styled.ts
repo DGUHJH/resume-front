@@ -13,6 +13,7 @@ export const Root = styled(Typography)<FontType>`
     margin-bottom: ${(props) => props.marginBottom ?? 0}px;
     margin-left: ${(props) => props.marginLeft ?? 0}px;
     margin-right: ${(props) => props.marginRight ?? 0}px;
+    animation: ${(props) => props.animation ?? 'none'};
     cursor: ${(props) => (props.onClick ? `pointer` : `default`)};
   }
 `;

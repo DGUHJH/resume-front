@@ -22,6 +22,7 @@ export type FontType = {
   marginLeft?: number;
   marginRight?: number;
   onClick?: () => void;
+  animation?: string;
 };
 
 export type ImageType = {
