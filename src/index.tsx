@@ -1,5 +1,5 @@
 import 'default.css';
-import store from 'features/index';
+import store from 'features';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
