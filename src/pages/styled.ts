@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Root = styled.div`
   width: 100%;
-  margin-bottom: 500px;
+  margin-bottom: 150px;
 `;
 
 export const RootContainer = styled(Container)`
