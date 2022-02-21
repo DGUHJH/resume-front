@@ -1,3 +1,10 @@
+type MarginType = {
+  marginTop?: number;
+  marginBottom?: number;
+  marginLeft?: number;
+  marginRight?: number;
+};
+
 export type FontType = {
   fontFamily:
     | 'NotoSansKR-Black'
@@ -17,38 +24,26 @@ export type FontType = {
   fontWeight?: number;
   color?: string;
   lineHeight?: string;
-  marginTop?: number;
-  marginBottom?: number;
-  marginLeft?: number;
-  marginRight?: number;
   onClick?: () => void;
   animation?: string;
-};
+} & MarginType;
 
 export type ImageType = {
   src: string;
   width: number;
   height?: number;
   borderRadius?: number;
-  marginTop?: number;
-  marginBottom?: number;
-  marginLeft?: number;
-  marginRight?: number;
   onClick?: () => void;
-};
+} & MarginType;
 
 export type DividerType = {
   width: number;
   height?: number;
   background: string;
-  marginTop?: number;
-  marginBottom?: number;
-  marginLeft?: number;
-  marginRight?: number;
-};
+} & MarginType;
 
 export type DotType = {
   width: number;
   height?: number;
   background: string;
-};
+} & MarginType;
