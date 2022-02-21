@@ -44,6 +44,12 @@ const stackDataList: StackType[] = [
   },
   {
     proficiency: '중',
+    title: 'React-Native',
+    content:
+      'React-Native의 특성과 필요성을 이해하며 어플리케이션을 배포할 수 있습니다.',
+  },
+  {
+    proficiency: '중하',
     title: 'Django',
     content: 'Django의 특성과 필요성을 이해하며 모델을 구성할 수 있습니다.',
   },
