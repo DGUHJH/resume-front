@@ -15,7 +15,7 @@ export const Root = styled.div<RootProps>`
     props.isVisible ? `translateY(0)` : `translateY(-100px)`};
   animation-duration: 0.25s;
   animation-timing-function: ease-out;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(50px);
   transition: transform 0.25s ease-out 0.25s;
   border-bottom: 2px #111 solid;
 `;
