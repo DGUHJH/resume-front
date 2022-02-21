@@ -1,6 +1,7 @@
 import profile from 'assets/images/profile.png';
 import CommonImage from 'components/Image/Common';
 import CommonTypography from 'components/Typography/Common';
+import { isMobile } from 'react-device-detect';
 import * as Styled from './styled';
 
 type ProfileDataType = {
@@ -32,7 +33,7 @@ const MainHelloContainer = () => {
     <Styled.Root>
       <CommonTypography
         fontFamily="NotoSansKR-Bold"
-        fontSize={40}
+        fontSize={isMobile ? 24 : 40}
         color="#111"
         lineHeight="150%"
       >
@@ -47,7 +48,7 @@ const MainHelloContainer = () => {
               <Styled.ProfileInfoLineHeaderTypoWrapper>
                 <CommonTypography
                   fontFamily="NotoSansKR-Medium"
-                  fontSize={20}
+                  fontSize={isMobile ? 18 : 20}
                   color="#111"
                 >
                   {profileData.header}
@@ -56,7 +57,7 @@ const MainHelloContainer = () => {
               <Styled.ProfileInfoLineContentTypoWrapper>
                 <CommonTypography
                   fontFamily="NotoSansKR-Regular"
-                  fontSize={18}
+                  fontSize={isMobile ? 12 : 18}
                   color="#111"
                 >
                   {profileData.content}

@@ -1,5 +1,6 @@
 import CommonDot from 'components/Dot/Common';
 import CommonTypography from 'components/Typography/Common';
+import { isMobile } from 'react-device-detect';
 import * as Styled from './styled';
 
 type AbilityType = {
@@ -45,7 +46,7 @@ const MainAbilityContainer = () => {
     <Styled.Root>
       <CommonTypography
         fontFamily="NotoSansKR-Bold"
-        fontSize={40}
+        fontSize={isMobile ? 32 : 40}
         color="#111"
         lineHeight="150%"
       >
@@ -58,7 +59,7 @@ const MainAbilityContainer = () => {
           >
             <CommonTypography
               fontFamily="NotoSansKR-Bold"
-              fontSize={24}
+              fontSize={isMobile ? 18 : 24}
               color="#111"
               lineHeight="150%"
             >
@@ -76,7 +77,7 @@ const MainAbilityContainer = () => {
                 />
                 <CommonTypography
                   fontFamily="NotoSansKR-Regular"
-                  fontSize={18}
+                  fontSize={isMobile ? 12 : 18}
                   color="#111"
                   lineHeight="150%"
                 >

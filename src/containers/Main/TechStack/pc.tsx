@@ -1,5 +1,6 @@
 import CommonDot from 'components/Dot/Common';
 import CommonTypography from 'components/Typography/Common';
+import { isMobile } from 'react-device-detect';
 import * as Styled from './styled';
 
 type StackDetailsType = {
@@ -60,7 +61,7 @@ const MainTechStack = () => {
     <Styled.Root>
       <CommonTypography
         fontFamily="NotoSansKR-Bold"
-        fontSize={40}
+        fontSize={isMobile ? 32 : 40}
         color="#111"
         lineHeight="150%"
       >
@@ -71,7 +72,7 @@ const MainTechStack = () => {
           <Styled.StackInfoContainer key={`stack_info_container_${index}`}>
             <CommonTypography
               fontFamily="NotoSansKR-Medium"
-              fontSize={24}
+              fontSize={isMobile ? 18 : 24}
               color="#111"
               lineHeight="150%"
             >
@@ -79,7 +80,7 @@ const MainTechStack = () => {
             </CommonTypography>
             <CommonTypography
               fontFamily="NotoSansKR-Regular"
-              fontSize={18}
+              fontSize={isMobile ? 12 : 18}
               color="#111"
               lineHeight="180%"
               marginLeft={10}
@@ -92,7 +93,7 @@ const MainTechStack = () => {
               >
                 <CommonTypography
                   fontFamily="NotoSansKR-Medium"
-                  fontSize={18}
+                  fontSize={isMobile ? 12 : 18}
                   color="#111"
                   lineHeight="180%"
                 >
@@ -101,7 +102,7 @@ const MainTechStack = () => {
                 </CommonTypography>
                 <CommonTypography
                   fontFamily="NotoSansKR-Regular"
-                  fontSize={16}
+                  fontSize={isMobile ? 10 : 16}
                   color="#111"
                   lineHeight="180%"
                   marginLeft={15}

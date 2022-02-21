@@ -1,4 +1,5 @@
 import CommonTypography from 'components/Typography/Common';
+import { isMobile } from 'react-device-detect';
 import * as Styled from './styled';
 
 type HeaderDataType = {
@@ -13,12 +14,12 @@ type Props = {
 
 const Header: React.FC<Props> = ({ headerDataList, isVisible }) => {
   return (
-    <Styled.Root isVisible={isVisible}>
-      <Styled.RootContainer>
+    <Styled.Root isVisible={isVisible} isMobile={isMobile}>
+      <Styled.RootContainer isMobile={isMobile}>
         {headerDataList.map((headerData, index) => (
           <CommonTypography
             fontFamily="NotoSansKR-Bold"
-            fontSize={20}
+            fontSize={isMobile ? 12 : 20}
             color="#111"
             lineHeight="180%"
             onClick={headerData.onClick}

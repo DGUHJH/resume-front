@@ -1,5 +1,6 @@
 import CommonDot from 'components/Dot/Common';
 import CommonTypography from 'components/Typography/Common';
+import { isMobile } from 'react-device-detect';
 import { onLinkClick } from 'utils/common';
 import * as Styled from './styled';
 
@@ -70,7 +71,7 @@ const MainCareerContainer = () => {
     <Styled.Root>
       <CommonTypography
         fontFamily="NotoSansKR-Bold"
-        fontSize={40}
+        fontSize={isMobile ? 32 : 40}
         color="#111"
         lineHeight="150%"
       >
@@ -81,7 +82,7 @@ const MainCareerContainer = () => {
           <Styled.CareerInfoContainer key={`career_info_container_${index}`}>
             <CommonTypography
               fontFamily="NotoSansKR-Medium"
-              fontSize={24}
+              fontSize={isMobile ? 18 : 24}
               color="#111"
               lineHeight="150%"
             >
@@ -89,7 +90,7 @@ const MainCareerContainer = () => {
             </CommonTypography>
             <CommonTypography
               fontFamily="NotoSansKR-Regular"
-              fontSize={18}
+              fontSize={isMobile ? 12 : 18}
               color="#555"
               lineHeight="180%"
               marginLeft={10}
@@ -98,7 +99,7 @@ const MainCareerContainer = () => {
             </CommonTypography>
             <CommonTypography
               fontFamily="NotoSansKR-Regular"
-              fontSize={18}
+              fontSize={isMobile ? 12 : 18}
               color="#111"
               lineHeight="180%"
               marginLeft={10}
@@ -111,18 +112,18 @@ const MainCareerContainer = () => {
               >
                 <CommonTypography
                   fontFamily="NotoSansKR-Medium"
-                  fontSize={18}
+                  fontSize={isMobile ? 12 : 18}
                   color="#111"
                   lineHeight="180%"
                   animation="Point 1s infinite"
                   onClick={onLinkClick(work.link)}
                 >
                   <CommonDot width={4} background="#111" marginRight={10} />
-                  {work.title} - 클릭
+                  {work.title}
                 </CommonTypography>
                 <CommonTypography
                   fontFamily="NotoSansKR-Regular"
-                  fontSize={16}
+                  fontSize={isMobile ? 10 : 16}
                   color="#111"
                   lineHeight="180%"
                   animation="Point 1s infinite"

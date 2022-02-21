@@ -10,3 +10,10 @@ export const LineContainer = styled.div`
   display: flex;
   align-items: center;
 `;
+
+export const SummaryContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+`;

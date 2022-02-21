@@ -8,6 +8,7 @@ import MainHelloContainer from 'containers/Main/Hello/pc';
 import MainIntroContainer from 'containers/Main/Intro/pc';
 import MainTechStack from 'containers/Main/TechStack/pc';
 import { useEffect, useRef, useState } from 'react';
+import { isMobile } from 'react-device-detect';
 import * as Styled from './styled';
 
 type HeaderDataType = {
@@ -65,30 +66,54 @@ const Main = () => {
   return (
     <Styled.Root>
       <Header isVisible={offset > 100} headerDataList={headerDataList} />
-      <Styled.RootContainer>
+      <Styled.RootContainer isMobile={isMobile}>
         <MainHelloContainer />
         <div ref={dividerRef[0]}>
-          <CommonDivider width={800} height={1} background="#c4c4c4" />
+          <CommonDivider
+            width={isMobile ? 320 : 800}
+            height={1}
+            background="#c4c4c4"
+          />
         </div>
         <MainIntroContainer />
         <div ref={dividerRef[1]}>
-          <CommonDivider width={800} height={1} background="#c4c4c4" />
+          <CommonDivider
+            width={isMobile ? 320 : 800}
+            height={1}
+            background="#c4c4c4"
+          />
         </div>
         <MainCareerContainer />
         <div ref={dividerRef[2]}>
-          <CommonDivider width={800} height={1} background="#c4c4c4" />
+          <CommonDivider
+            width={isMobile ? 320 : 800}
+            height={1}
+            background="#c4c4c4"
+          />
         </div>
         <MainTechStack />
         <div ref={dividerRef[3]}>
-          <CommonDivider width={800} height={1} background="#c4c4c4" />
+          <CommonDivider
+            width={isMobile ? 320 : 800}
+            height={1}
+            background="#c4c4c4"
+          />
         </div>
         <MainAbilityContainer />
         <div ref={dividerRef[4]}>
-          <CommonDivider width={800} height={1} background="#c4c4c4" />
+          <CommonDivider
+            width={isMobile ? 320 : 800}
+            height={1}
+            background="#c4c4c4"
+          />
         </div>
         <MainAcademicContainer />
         <div ref={dividerRef[5]}>
-          <CommonDivider width={800} height={1} background="#c4c4c4" />
+          <CommonDivider
+            width={isMobile ? 320 : 800}
+            height={1}
+            background="#c4c4c4"
+          />
         </div>
         <MainContactContainer />
       </Styled.RootContainer>

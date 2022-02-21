@@ -1,5 +1,6 @@
 import CommonDot from 'components/Dot/Common';
 import CommonTypography from 'components/Typography/Common';
+import { isMobile } from 'react-device-detect';
 import { onLinkClick } from 'utils/common';
 import * as Styled from './styled';
 
@@ -27,7 +28,7 @@ const MainContactContainer = () => {
     <Styled.Root>
       <CommonTypography
         fontFamily="NotoSansKR-Bold"
-        fontSize={40}
+        fontSize={isMobile ? 32 : 40}
         color="#111"
         lineHeight="150%"
       >
@@ -45,7 +46,7 @@ const MainContactContainer = () => {
             />
             <CommonTypography
               fontFamily="NotoSansKR-Medium"
-              fontSize={24}
+              fontSize={isMobile ? 18 : 24}
               color="rgba(0, 105, 228, 1)"
               lineHeight="150%"
               onClick={onLinkClick(contactData.link)}

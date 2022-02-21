@@ -10,6 +10,7 @@ export const ProfileContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 20px;
 `;
 
@@ -22,6 +23,7 @@ export const ProfileInfoContainer = styled.div`
 export const ProfileInfoLineContainer = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const ProfileInfoLineHeaderTypoWrapper = styled.div`
