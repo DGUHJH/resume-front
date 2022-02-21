@@ -3,9 +3,6 @@ import styled from 'styled-components';
 
 export const Root = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 export const RootContainer = styled(Container)`
@@ -13,6 +10,7 @@ export const RootContainer = styled(Container)`
     max-width: 800px;
     display: flex;
     flex-direction: column;
+    gap: 40px;
     padding: 0;
     margin-top: 20px;
   }

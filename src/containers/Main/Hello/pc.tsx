@@ -11,7 +11,7 @@ const MainHelloContainer = () => {
         lineHeight="150%"
         animation="fadeIn 0.5s"
       >
-        저는요.
+        안녕하세요.
       </CommonTypography>
       <CommonTypography
         fontFamily="NotoSansKR-Medium"
