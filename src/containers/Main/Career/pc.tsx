@@ -114,6 +114,7 @@ const MainCareerContainer = () => {
                   fontSize={18}
                   color="#111"
                   lineHeight="180%"
+                  animation="Point 1s infinite"
                   onClick={onLinkClick(work.link)}
                 >
                   <CommonDot width={4} background="#111" marginRight={10} />
@@ -124,6 +125,7 @@ const MainCareerContainer = () => {
                   fontSize={16}
                   color="#111"
                   lineHeight="180%"
+                  animation="Point 1s infinite"
                   onClick={onLinkClick(work.link)}
                   marginLeft={15}
                 >
