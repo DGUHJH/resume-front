@@ -61,3 +61,12 @@
     url('./assets/fonts/NotoSansKR-Thin.woff') format('woff'),
     url('./assets/fonts/NotoSansKR-Thin.otf') format('opentype');
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
