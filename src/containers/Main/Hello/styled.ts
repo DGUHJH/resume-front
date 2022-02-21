@@ -5,3 +5,8 @@ export const Root = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const LineContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
