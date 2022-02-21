@@ -46,3 +46,9 @@ export type DividerType = {
   marginLeft?: number;
   marginRight?: number;
 };
+
+export type DotType = {
+  width: number;
+  height?: number;
+  background: string;
+};
