@@ -16,6 +16,10 @@ const contactDataList: ContactType[] = [
     label: '자기소개 페이지 소스 코드',
     link: 'https://github.com/DGUHJH/resume-front',
   },
+  {
+    label: '투두리스트 소스 코드',
+    link: 'https://github.com/DGUHJH/humanscape-test',
+  },
 ];
 
 const MainContactContainer = () => {
