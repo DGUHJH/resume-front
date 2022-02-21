@@ -1,3 +1,4 @@
+import MainAbilityContainer from 'containers/Main/Ability/pc';
 import MainAcademicContainer from 'containers/Main/Academic/pc';
 import MainCareerContainer from 'containers/Main/Career/pc';
 import MainHelloContainer from 'containers/Main/Hello/pc';
@@ -14,6 +15,7 @@ const Main = () => {
         <MainCareerContainer />
         <MainAcademicContainer />
         <MainTechStack />
+        <MainAbilityContainer />
       </Styled.RootContainer>
     </Styled.Root>
   );
