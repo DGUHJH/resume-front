@@ -12,6 +12,15 @@ const MainHelloContainer = () => {
       >
         안녕하세요.
       </CommonTypography>
+      <CommonTypography
+        fontFamily="NotoSansKR-Medium"
+        fontSize={24}
+        color="#111"
+        lineHeight="150%"
+        marginTop={10}
+      >
+        정교한 컨벤션을 통해
+      </CommonTypography>
       <Styled.LineContainer>
         <CommonTypography
           fontFamily="NotoSansKR-Bold"
