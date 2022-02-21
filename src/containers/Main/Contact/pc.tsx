@@ -12,6 +12,10 @@ const contactDataList: ContactType[] = [
   { label: '이메일', link: 'mailto:ghkdwogud852@gmail.com' },
   { label: '로켓펀치', link: 'https://www.rocketpunch.com/@ghkdwogud852' },
   { label: 'Github', link: 'https://github.com/DGUHJH' },
+  {
+    label: '자기소개 페이지 소스 코드',
+    link: 'https://github.com/DGUHJH/resume-front',
+  },
 ];
 
 const MainContactContainer = () => {
