@@ -17,7 +17,7 @@ type StackType = {
 
 const stackDataList: StackType[] = [
   {
-    proficiency: '상',
+    proficiency: '중상',
     title: 'React (CRA, Next.js) ',
     content:
       'React의 특성과 필요성을 이해하며 컴포넌트 특성과 기타 세부적인 개념을 알고 이를 응용할 수 있습니다.',
